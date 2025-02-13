@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CroniCare - Adicionar Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CroniCare</h1><br>
+        <p>Registrar sintomas</p>
+    </header>
+
+    <div>
+        <input type="text" id="symptom" placeholder="Sintomas" />
+        <input type="text" id="medication" placeholder="Medicamentos (Se aplicado)" />
+        <input type="date" id="consultationDate" placeholder="Data da Consulta" />
+        <input type="time" id="consultationTime" placeholder="Hora da Consulta" />
+        <button onclick="addRecord()">Adicionar Registro</button>
+    </div>
+
+    <button onclick="window.location.href='visualizar.html'">Ver Registros</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
