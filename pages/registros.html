@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros - CroniCare</title>
+    <link rel="stylesheet" href="/styles/registros.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <a href="/index.html">CroniCare</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/pages/sintomas.html">Sintomas</a></li>
+                <li><a href="/pages/medicamentos.html">Medicamentos</a></li>
+                <li><a href="/pages/consultas.html">Consultas</a></li>
+                <li><a href="#">Registros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Registros</h1>
+        <div class="tabs">
+            <button class="tab-btn" onclick="mostrarAba('sintomas')">Sintomas</button>
+            <button class="tab-btn" onclick="mostrarAba('medicamentos')">Medicamentos</button>
+            <button class="tab-btn" onclick="mostrarAba('consultas')">Consultas</button>
+        </div>
+
+        <div id="sintomas" class="tab-content">
+            <h2>Sintomas Registrados</h2>
+            <table id="sintomas-table">
+                <thead>
+                    <tr>
+                        <th>Sintoma</th>
+                        <th>Data</th>
+                        <th>Severidade</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="medicamentos" class="tab-content" style="display:none;">
+            <h2>Medicamentos Registrados</h2>
+            <table id="medicamentos-table">
+                <thead>
+                    <tr>
+                        <th>Medicamento</th>
+                        <th>Dosagem</th>
+                        <th>Data de Início</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="consultas" class="tab-content" style="display:none;">
+            <h2>Consultas Registradas</h2>
+            <table id="consultas-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Médico</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/registros.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CroniCare - Medicamentos</title>
+    <link rel="stylesheet" href="/styles/medicamentos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">CroniCare</a>
+        </div>
+        <nav>
+            <ul> 
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/pages/sintomas.html">Sintomas</a></li>
+                <li><a href="#">Medicamentos</a></li>
+                <li><a href="/pages/consultas.html">Consultas</a></li>
+                <li><a href="/pages/registros.html">Registros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Registro de Medicamentos</h1>
+        <form id="medication-form">
+            <label for="medication-name">Medicamento:</label>
+            <input type="text" id="medication-name" placeholder="Nome do medicamento" required>
+
+            <label for="medication-dose">Dose:</label>
+            <input type="text" id="medication-dose" placeholder="Dose do medicamento (mg)" required>
+
+            <label for="medication-time">Hora de Tomar:</label>
+            <input type="time" id="medication-time" required>
+
+            <label for="medication-description">Descrição (opcional):</label>
+            <textarea id="medication-description" placeholder="Adicione mais detalhes (opcional)"></textarea>
+
+            <button type="submit">Registrar Medicamento</button>
+        </form>
+
+        <div id="confirmation-message" class="confirmation-message">
+            Medicamento registrado com sucesso!
+        </div>
+    </div>
+
+    <script src="/medicamentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CroniCare - Consultas</title>
+    <link rel="stylesheet" href="/styles/consultas.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="/index.html">CroniCare</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/pages/sintomas.html">Sintomas</a></li>
+                <li><a href="/pages/medicamentos.html">Medicamentos</a></li>
+                <li><a href="#">Consultas</a></li>
+                <li><a href="/pages/registros.html">Registros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Registrar Próxima Consulta</h1>
+        <form id="consultation-form">
+            <label for="doctor-name">Nome do Médico:</label>
+            <input type="text" id="doctor-name" placeholder="Nome do médico" required>
+        
+            <label for="consultation-date">Data da Consulta:</label>
+            <input type="date" id="consultation-date" required>
+        
+            <label for="consultation-time">Horário da Consulta:</label>
+            <input type="time" id="consultation-time" required>
+        
+            <label for="consultation-observations">Observações:</label>
+            <textarea id="consultation-observations" placeholder="Observações adicionais (opcional)"></textarea>
+        
+            <button type="submit">Registrar Consulta</button>
+        </form>
+
+        <div id="confirmation-message" class="confirmation-message">
+            Consulta registrada com sucesso!
+        </div>
+    </div>
+
+    <script src="/consultas.js"></script>
+</body>
+</html> 
