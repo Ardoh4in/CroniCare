@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CroniCare</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <header>
+            <div class="logo">
+                <a href="#">CroniCare</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="/pages/sintomas.html">Sintomas</a></li>
+                    <li><a href="/pages/medicamentos.html">Medicamentos</a></li>
+                    <li><a href="/pages/consultas.html">Consultas</a></li>
+                    <li><a href="/pages/registros.html">Registros</a></li>
+
+                </ul>
+            </nav>
+    </header>
+
+    <section class="mensagem-paciente">
+        <h2>Bem-vindo à Área do Paciente!</h2>
+        <p>Este é o seu espaço para acompanhar sua saúde de forma simples e prática. Aqui, você pode:</p>
+        <ul>
+            <li>Registrar seus <strong>sintomas</strong> para monitoramento diário.</li>
+            <li>Adicionar os <strong>medicamentos</strong> que você está tomando.</li>
+            <li>Agendar suas <strong>próximas consultas</strong> para nunca perder um compromisso importante.</li>
+        </ul>
+        <p>Fique tranquilo, suas informações estarão seguras e você poderá acessá-las a qualquer momento.</p>
+    <button onclick="window.location.href='/pages/registros.html'">Registros</button>
+    </section>
+    
+    <div class="container">
+        <button id="notification-btn">🔔</button>
+        <div id="notification-popup" class="notification-popup">
+          Você tem uma nova notificação!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body> 
+</html>
